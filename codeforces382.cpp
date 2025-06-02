@@ -6,7 +6,7 @@ int main() {
     int count = 0;
     while(n > 0) {
         count++;
-        n = n / 10;
+        n /= 10;
     }
     cout << count;
     return 0;
