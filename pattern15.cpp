@@ -9,6 +9,7 @@ int main(){
             //cout<<ch;  
             //ch=ch+1;
             cout<<num;
+            num=num+1;
             cout<<" ";
         }
         cout<<endl;

@@ -8,8 +8,9 @@ int main(){
         int j=1;
         int count=i;
         while(j<=i){
-            cout<<count;
-            count++;
+            cout<<(i-j+1);
+            //cout<<count;
+            //count++;
 
             j=j++;
             cout<<" ";
