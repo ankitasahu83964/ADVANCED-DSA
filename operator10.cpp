@@ -2,14 +2,21 @@
 using namespace std;
 
 int main() {
-    int n=5;
+    int n=10;
     cout<<"enter the value of n"<<endl;
-    int sum=0;
+    int a=0;
+    int b=1;
+    cout<<a<<" "<<b<<" ";
+    //int sum=0;
     for(int i=1; i<=n; i++){
-        sum=sum+i;
+        int nextNumber=a+b;
+        cout<<nextNumber<<" ";
+        a=b;
+        b=nextNumber;
+
 
     }
-    cout<<sum<<endl;
+    
 
 }
     
