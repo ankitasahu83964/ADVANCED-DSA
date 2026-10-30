@@ -1,0 +1,5 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main(){int n;cin>>n;int r=0;while(n){r=r*10+n%10;n/=10;}cout<<r;}
+
