@@ -1,5 +1,13 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;for(int i=n;i>=1;i--)cout<<i<<" ";}
-
+int main() {
+    int a, b;
+    cin >> a >> b;
+    while(b != 0) {
+        int r = a % b;
+        a = b;
+        b = r;
+    }
+    cout << a;
+    return 0;
+}

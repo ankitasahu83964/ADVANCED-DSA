@@ -1,5 +1,13 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;int s=0;while(n){s++;n/=10;}cout<<s;}
-
+int main() {
+    int a, b;
+    char op;
+    cin >> a >> op >> b;
+    if(op == '+') cout << a + b;
+    else if(op == '-') cout << a - b;
+    else if(op == '*') cout << a * b;
+    else if(op == '/' && b != 0) cout << a / b;
+    else cout << "Invalid";
+    return 0;
+}

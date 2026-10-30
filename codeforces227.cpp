@@ -1,5 +1,8 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;cout<<(n%2==0?"YES":"NO");}
-
+int main() {
+    int a, b;
+    cin >> a >> b;
+    cout << a + b;
+    return 0;
+}

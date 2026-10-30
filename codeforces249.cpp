@@ -1,5 +1,14 @@
 #include <iostream>
-#include <algorithm>
+#include <string>
 using namespace std;
-int main(){int n;cin>>n;for(int i=1;i<=n;i++)cout<<i*i<<" ";}
-
+int main() {
+    string s;
+    cin >> s;
+    string rev = s;
+    for(int i = 0; i < s.length(); i++) {
+        rev[i] = s[s.length() - 1 - i];
+    }
+    if(s == rev) cout << "Palindrome";
+    else cout << "Not Palindrome";
+    return 0;
+}

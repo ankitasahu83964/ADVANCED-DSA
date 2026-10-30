@@ -1,5 +1,11 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;cout<<n/100;}
-
+int main() {
+    int n, count = 0;
+    cin >> n;
+    for(int i = 1; i <= n; i++) {
+        if(n % i == 0) count++;
+    }
+    cout << count;
+    return 0;
+}

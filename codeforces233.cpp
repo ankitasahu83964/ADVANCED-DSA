@@ -1,5 +1,12 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;long long f=1;for(int i=1;i<=n;i++)f*=i;cout<<f;}
-
+int main() {
+    int n, count = 0;
+    cin >> n;
+    while(n != 0) {
+        count++;
+        n /= 10;
+    }
+    cout << count;
+    return 0;
+}

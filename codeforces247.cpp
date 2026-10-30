@@ -1,5 +1,9 @@
 #include <iostream>
-#include <algorithm>
+#include <string>
 using namespace std;
-int main(){int n;cin>>n;int s=0;for(int i=2;i<=n;i+=2)s+=i;cout<<s;}
-
+int main() {
+    string s;
+    cin >> s;
+    cout << s.length();
+    return 0;
+}

@@ -1,5 +1,12 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;int s=0;for(int i=1;i<=n;i+=2)s+=i;cout<<s;}
-
+int main() {
+    int n, sum = 0;
+    cin >> n;
+    for(int i = 1; i < n; i++) {
+        if(n % i == 0) sum += i;
+    }
+    if(sum == n) cout << "Perfect Number";
+    else cout << "Not Perfect Number";
+    return 0;
+}

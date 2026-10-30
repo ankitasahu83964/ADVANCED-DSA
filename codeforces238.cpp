@@ -1,5 +1,15 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;cout<<n/10;}
-
+int main() {
+    int a, b, x, y;
+    cin >> a >> b;
+    x = a;
+    y = b;
+    while(y != 0) {
+        int r = x % y;
+        x = y;
+        y = r;
+    }
+    cout << (a * b) / x;
+    return 0;
+}

@@ -1,5 +1,9 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;cout<<(n>0?"Positive":"Not Positive");}
-
+int main() {
+    int a, b;
+    cin >> a >> b;
+    if(a > b) cout << a;
+    else cout << b;
+    return 0;
+}

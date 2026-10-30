@@ -1,5 +1,10 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int n;cin>>n;cout<<(n>=0?"YES":"NO");}
-
+int main() {
+    int year;
+    cin >> year;
+    if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+        cout << "Leap Year";
+    else cout << "Not Leap Year";
+    return 0;
+}

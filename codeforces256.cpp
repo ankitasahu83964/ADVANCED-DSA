@@ -1,5 +1,15 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
-int main(){int a,b;cin>>a>>b;cout<<(a==b?"Equal":"Not Equal");}
-
+int main() {
+    int n, temp, sum = 0;
+    cin >> n;
+    temp = n;
+    while(n > 0) {
+        int digit = n % 10;
+        sum += digit * digit * digit;
+        n /= 10;
+    }
+    if(sum == temp) cout << "Armstrong";
+    else cout << "Not Armstrong";
+    return 0;
+}
